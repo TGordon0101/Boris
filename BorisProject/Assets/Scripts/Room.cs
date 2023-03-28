@@ -5,25 +5,53 @@ using UnityEngine.Tilemaps;
 
 public class Room : MonoBehaviour
 {
-    private TilemapRenderer m_renderer;
+    private SpriteRenderer m_spriteRenderer;
+    public float alpha = 1.0f;
+    private bool increaseAlpha = false;
+    private bool decreaseAlpha = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_renderer = GetComponent<TilemapRenderer>();
+        m_spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        m_spriteRenderer.color = new Color(0, 0, 0, alpha);
 
+        if (increaseAlpha)
+        {
+            if (alpha < 1.0f)
+            {
+                AlphaUp();
+            }
+            else
+            {
+                alpha = 1.0f;
+                increaseAlpha = false;
+            }
+        }
+
+        else if (decreaseAlpha)
+        {
+            if (alpha > 0.0f)
+            {
+                AlphaDown();
+            }
+            else
+            {
+                alpha = 0.0f;
+                decreaseAlpha = false;
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.name == "Player")
         {
-            m_renderer.enabled = true;
+            increaseAlpha = true;
         }
     }
 
@@ -31,7 +59,17 @@ public class Room : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            m_renderer.enabled = false;
+            decreaseAlpha = true;
         }
+    }
+
+    private void AlphaUp()
+    {
+        alpha += 0.01f;
+    }
+
+    private void AlphaDown()
+    {
+        alpha -= 0.01f;
     }
 }
