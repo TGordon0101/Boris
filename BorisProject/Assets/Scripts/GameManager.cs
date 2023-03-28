@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public bool b_ChaseState;
     public bool b_GameEnd;
 
+    [SerializeField] private LightManager m_lightManager;
+
     void Start()
     {
         Player_Obj = GameObject.Find("Player");
@@ -20,6 +22,13 @@ public class GameManager : MonoBehaviour
     {
         if (col.gameObject.name == "Player")
         {
+            if(!b_ChaseState)
+            {
+                for (int i = 0; i < m_lightManager.GetLights().Length; i++)
+                {
+                    m_lightManager.GetLights()[i].GetComponent<LightChange>().ToggleLightColor();
+                }
+            }
             b_ChaseState = true;
             AI_Script_Obj.SetBoolChase(true);
         }
