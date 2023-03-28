@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -17,14 +18,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float dirX = Input.GetAxisRaw("Horizontal");
-        float dirY = Input.GetAxisRaw("Vertical");
+        //Look At Mouse
+        LookAtMouse();
 
-        direction = new Vector2(dirX, dirY).normalized;
+        //Move Player
+        Move();
     }
 
-    void FixedUpdate()
+    private void LookAtMouse()
     {
-        body.velocity = new Vector2(direction.x * moveSpeed, direction.y * moveSpeed);
+        Vector2 mousePos = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.up = (Vector3)(mousePos - new Vector2(transform.position.x, transform.position.y));
+    }
+
+    private void Move()
+    {
+        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        body.velocity = input.normalized * moveSpeed;
     }
 }
