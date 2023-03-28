@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ChaseTrigger : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public GameObject Player_Obj;
     public AI AI_Script_Obj;
 
-    public bool PlayerDectected;
+    public bool b_ChaseState;
+    public bool b_GameEnd;
 
     void Start()
     {
@@ -19,16 +20,13 @@ public class ChaseTrigger : MonoBehaviour
     {
         if (col.gameObject.name == "Player")
         {
-            PlayerDectected = true;
+            b_ChaseState = true;
             AI_Script_Obj.SetBoolChase(true);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D col)
+    public void SetGameEnd(bool _EndGameBool)
     {
-        if (col.gameObject.name == "Player")
-        {
-            PlayerDectected = false;
-        }
+        b_GameEnd = _EndGameBool;
     }
 }
