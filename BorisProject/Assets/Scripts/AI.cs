@@ -16,6 +16,8 @@ public class AI : MonoBehaviour
 
     public bool AI_Chase;
 
+    public AudioSource SoundEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,8 @@ public class AI : MonoBehaviour
         AI_Obj = GameObject.FindGameObjectWithTag("Enemy");
 
         AI_Chase = false;
+
+        SoundEffect = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -48,12 +52,17 @@ public class AI : MonoBehaviour
         }
         else {
             AI_Animation.SetFloat("Speed", 0.0f);
+            PlaySound();
         }
-
     }
 
     public void SetBoolChase(bool _Chase)
     {
         AI_Chase = _Chase;
+    }
+
+    public void PlaySound()
+    {
+        SoundEffect.Play();
     }
 }
