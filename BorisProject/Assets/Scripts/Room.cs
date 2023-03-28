@@ -5,7 +5,8 @@ using UnityEngine.Tilemaps;
 
 public class Room : MonoBehaviour
 {
-    private SpriteRenderer m_spriteRenderer;
+    [SerializeField]
+    private SpriteRenderer[] m_spriteRenderers;
     public float alpha = 1.0f;
     private bool increaseAlpha = false;
     private bool decreaseAlpha = false;
@@ -13,36 +14,38 @@ public class Room : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-        m_spriteRenderer.color = new Color(0, 0, 0, alpha);
-
-        if (increaseAlpha)
+        for (int i = 0; i < m_spriteRenderers.Length; i++)
         {
-            if (alpha < 1.0f)
-            {
-                AlphaUp();
-            }
-            else
-            {
-                alpha = 1.0f;
-                increaseAlpha = false;
-            }
-        }
+            m_spriteRenderers[i].color = new Color(0, 0, 0, alpha);
 
-        else if (decreaseAlpha)
-        {
-            if (alpha > 0.0f)
+            if (increaseAlpha)
             {
-                AlphaDown();
+                if (alpha < 1.0f)
+                {
+                    AlphaUp();
+                }
+                else
+                {
+                    alpha = 1.0f;
+                    increaseAlpha = false;
+                }
             }
-            else
+
+            else if (decreaseAlpha)
             {
-                alpha = 0.0f;
-                decreaseAlpha = false;
+                if (alpha > 0.0f)
+                {
+                    AlphaDown();
+                }
+                else
+                {
+                    alpha = 0.0f;
+                    decreaseAlpha = false;
+                }
             }
         }
     }
