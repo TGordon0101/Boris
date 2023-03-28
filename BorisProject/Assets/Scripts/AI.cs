@@ -35,19 +35,21 @@ public class AI : MonoBehaviour
 
             Monster_AI_Mesh.SetDestination(new Vector3(Target_Position.x, Target_Position.y, 1));
 
+
+            Vector3 diff = Player_Obj.transform.position - transform.position;
+            diff.Normalize();
+
+            float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
+
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 2);
             AI_Animation.SetFloat("Speed", 1.0f);
+
         }
         else {
             AI_Animation.SetFloat("Speed", 0.0f);
         }
 
-        Vector3 diff = Player_Obj.transform.position - transform.position;
-        diff.Normalize();
-
-        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
-
-        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 2);
     }
 
     public void SetBoolChase(bool _Chase)
