@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Room.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\NavUp.cs" />
+    <Compile Include="Assets\Scripts\LightChange.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
