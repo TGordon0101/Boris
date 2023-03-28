@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1815615874426262629}
   - component: {fileID: 1815615874426262628}
   - component: {fileID: 1815615874426262626}
-  - component: {fileID: 7942367849426024373}
   - component: {fileID: 4125617098466696915}
+  - component: {fileID: 4880958489637729048}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -124,7 +124,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
---- !u!60 &7942367849426024373
+--- !u!114 &4125617098466696915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815615874426262625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bec1854b20c4d04c8e3d4dc90cbef0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sepiaLight: {fileID: 1815615874900199059}
+  m_blueLight: {fileID: 5968609951095389879}
+--- !u!60 &4880958489637729048
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,20 +235,6 @@ PolygonCollider2D:
       - {x: 0.32, y: -0.56}
       - {x: 0.5, y: -0.53999996}
       - {x: 0.65, y: -0.52}
---- !u!114 &4125617098466696915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815615874426262625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bec1854b20c4d04c8e3d4dc90cbef0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_sepiaLight: {fileID: 1815615874900199059}
-  m_blueLight: {fileID: 5968609951095389879}
 --- !u!1 &1815615874900199057
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 20
+  m_PointLightOuterRadius: 15
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 20
+  m_PointLightOuterRadius: 15
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
