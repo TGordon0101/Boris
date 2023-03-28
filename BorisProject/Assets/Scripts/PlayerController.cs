@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
     private Rigidbody2D body;
-    private Vector2 direction;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +17,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Move Camera
+        MoveCamera();
+
         //Look At Mouse
         LookAtMouse();
 
@@ -36,4 +38,9 @@ public class PlayerController : MonoBehaviour
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         body.velocity = input.normalized * moveSpeed;
     }
+
+    private void MoveCamera()
+    {
+        Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, -1.0f);
+    }    
 }
