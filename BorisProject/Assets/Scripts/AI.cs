@@ -30,7 +30,6 @@ public class AI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (AI_Chase == true) {
             Target_Position = Player_Obj.transform.position;
 
@@ -47,6 +46,8 @@ public class AI : MonoBehaviour
 
         float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
+
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 2);
     }
 
     public void SetBoolChase(bool _Chase)
