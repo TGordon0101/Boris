@@ -16,7 +16,7 @@ public class AI : MonoBehaviour
 
     public bool AI_Chase;
 
-    public AudioSource SoundEffect;
+   // public AudioSource SoundEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,7 @@ public class AI : MonoBehaviour
 
         AI_Chase = false;
 
-        SoundEffect = GetComponent<AudioSource>();
+        //SoundEffect = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -63,6 +63,6 @@ public class AI : MonoBehaviour
 
     public void PlaySound()
     {
-        SoundEffect.Play();
+       // SoundEffect.Play();
     }
 }

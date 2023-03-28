@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public bool b_ChaseState;
     public bool b_GameEnd;
+    public bool b_HasKey;
 
     [SerializeField] private LightManager m_lightManager;
 
@@ -37,5 +38,10 @@ public class GameManager : MonoBehaviour
     public void SetGameEnd(bool _EndGameBool)
     {
         b_GameEnd = _EndGameBool;
+    }
+
+    public void SetKey(bool _SetKeyBool)
+    {
+        b_HasKey = _SetKeyBool;
     }
 }
