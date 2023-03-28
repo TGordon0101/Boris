@@ -42,7 +42,11 @@ public class AI : MonoBehaviour
             AI_Animation.SetFloat("Speed", 0.0f);
         }
 
-        this.transform.rotation = Quaternion.identity;
+        Vector3 diff = Player_Obj.transform.position - transform.position;
+        diff.Normalize();
+
+        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
     }
 
     public void SetBoolChase(bool _Chase)
