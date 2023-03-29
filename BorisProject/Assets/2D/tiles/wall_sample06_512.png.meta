@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8d86d4b1b79b7444796a45c8ba689119
+guid: 25e4bfab996e4d14fab4307bfdd14145
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wall_sample04_512_0
+      name: wall_sample06_512_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e028d835d2f6522468152f71882f2758
-      internalID: 803983117
+      spriteID: 977c54eb02b6ea9468bd065328876e27
+      internalID: -1387677671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_1
+      name: wall_sample06_512_1
       rect:
         serializedVersion: 2
         x: 512
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb9f9c68a8a23249b954cd4e111d57d
-      internalID: -2047676078
+      spriteID: 320a9e5bd8bdf5d4e8edccc484399dce
+      internalID: 545970964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_2
+      name: wall_sample06_512_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bfe09adc78a3443a4e7380117208e8
-      internalID: -1130585243
+      spriteID: 36929266247a5204f8d1bf15ce0762b0
+      internalID: -1523686310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_3
+      name: wall_sample06_512_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfbe619291200aa46abf4f181d283fb6
-      internalID: -166705793
+      spriteID: fa4bd10949b95504c8dd77590c99c68b
+      internalID: 1847032475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_4
+      name: wall_sample06_512_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28a2b6a89a858e64ea8f7a47e9457937
-      internalID: -2109280133
+      spriteID: 0affbb9d216537c4fad7c4e92d685782
+      internalID: 186064563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_5
+      name: wall_sample06_512_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -224,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 917bedc3dde38cf42aed65951b3c871b
-      internalID: 438115
+      spriteID: 4fcb3195991dce644a3aff25256780c7
+      internalID: -2029851125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_6
+      name: wall_sample06_512_6
       rect:
         serializedVersion: 2
         x: 0
@@ -245,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 672f07dde9f1f1a4bb0cb75587367fba
-      internalID: 962014055
+      spriteID: 0a74caee43e17be4fbefaa6a42043f0d
+      internalID: 1330520027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_7
+      name: wall_sample06_512_7
       rect:
         serializedVersion: 2
         x: 512
@@ -266,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eae3a94cf1f7735409c32af9990eb8dc
-      internalID: -1330250504
+      spriteID: 7b3308b2cb7363b47b8c2f4e4f2aebb8
+      internalID: -1959233288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_8
+      name: wall_sample06_512_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -287,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d32fa675d22827d45ae7e7db41e67609
-      internalID: -1697215207
+      spriteID: b872d473b51aa4a428cb8d000e1873f5
+      internalID: -1494961554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_9
+      name: wall_sample06_512_9
       rect:
         serializedVersion: 2
         x: 1536
@@ -308,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 680bdf3dbb97e7b479898da0abf4394a
-      internalID: -257766380
+      spriteID: 51262d714f1dcb14ba385fa9a658d715
+      internalID: 1716933352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_10
+      name: wall_sample06_512_10
       rect:
         serializedVersion: 2
         x: 2048
@@ -329,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad9bafbe7e1761e4a931b6b77ebcc14d
-      internalID: 1275149320
+      spriteID: ce66bcf7ad7800148bfc740a7f214366
+      internalID: -1085978455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_11
+      name: wall_sample06_512_11
       rect:
         serializedVersion: 2
         x: 2560
@@ -350,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c24af3902642b14c9138e35e9edbdbe
-      internalID: -1160157978
+      spriteID: 023302ee5dc337042ba2f103867bcfbd
+      internalID: 1505063439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_12
+      name: wall_sample06_512_12
       rect:
         serializedVersion: 2
         x: 0
@@ -371,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4608683be2d60e04a91d21d8b134f843
-      internalID: -766694317
+      spriteID: 1c852c63d59146b4aa8478bbeb7a1b95
+      internalID: 1221079180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_13
+      name: wall_sample06_512_13
       rect:
         serializedVersion: 2
         x: 512
@@ -392,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8b3ed0f06b4e346a5f9da86e879ec0
-      internalID: -968294237
+      spriteID: 0793e335ce43a1842974b4c4d9a37815
+      internalID: -536746565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_14
+      name: wall_sample06_512_14
       rect:
         serializedVersion: 2
         x: 1024
@@ -413,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6c9384828768d64aa80560690a93510
-      internalID: -1588836914
+      spriteID: f8cc6dff957649b44a921b074c136be8
+      internalID: -717349318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_15
+      name: wall_sample06_512_15
       rect:
         serializedVersion: 2
         x: 0
@@ -434,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69e7e9097e228f14dad9ff0f10508789
-      internalID: -1870091415
+      spriteID: d306f27e7b4eaa04e836cd87f798198e
+      internalID: 1667942791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_16
+      name: wall_sample06_512_16
       rect:
         serializedVersion: 2
         x: 512
@@ -455,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 945e5c1cf2e6d7e499193d9ae66a7a44
-      internalID: 997359009
+      spriteID: 7b3c96fa7d53aef458d0e291e96fe3a7
+      internalID: -1566089525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_17
+      name: wall_sample06_512_17
       rect:
         serializedVersion: 2
         x: 1024
@@ -476,14 +476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32366955ccd3beb498c3569d09d36bf1
-      internalID: -1477065250
+      spriteID: 7a2eab46dfee79b408a884c2598fa626
+      internalID: -1456366365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_18
+      name: wall_sample06_512_18
       rect:
         serializedVersion: 2
         x: 0
@@ -497,14 +497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f47f87a6ed74d2a43b73c4a0f61e77eb
-      internalID: 733998701
+      spriteID: e3cb7f8e8c446514ab8ea34c634e479c
+      internalID: -371031158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_19
+      name: wall_sample06_512_19
       rect:
         serializedVersion: 2
         x: 512
@@ -518,14 +518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a1851ff495d83741b54af7027f92cf1
-      internalID: 1635877810
+      spriteID: fdf3fd5e01ef0b64b934554e47d3a21a
+      internalID: -218220360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_20
+      name: wall_sample06_512_20
       rect:
         serializedVersion: 2
         x: 1024
@@ -539,14 +539,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eee8b77f387e0fc4e88f0984880050a1
-      internalID: 1376766235
+      spriteID: db7ae37aa2169734ba7fe7ac0d64e7ab
+      internalID: -451292068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_21
+      name: wall_sample06_512_21
       rect:
         serializedVersion: 2
         x: 0
@@ -560,14 +560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63ea902484daff84596b8a47ac0bbb6e
-      internalID: -387483739
+      spriteID: d7ace9caec7ca8147a83a1431abe9f1e
+      internalID: -479650243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_22
+      name: wall_sample06_512_22
       rect:
         serializedVersion: 2
         x: 512
@@ -581,14 +581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0478033eceb63494b99ad1186f9b9c47
-      internalID: -1052360819
+      spriteID: 84647ad9b4a73224aa07116989d0859d
+      internalID: 259970769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall_sample04_512_23
+      name: wall_sample06_512_23
       rect:
         serializedVersion: 2
         x: 1024
@@ -602,8 +602,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7238a176b8a16844fb062b28d0210187
-      internalID: 2105708750
+      spriteID: b4300b041eb01464ca6fb92de4ab70f8
+      internalID: -1279863172
       vertices: []
       indices: 
       edges: []
@@ -619,30 +619,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wall_sample04_512_19: 1635877810
-      wall_sample04_512_12: -766694317
-      wall_sample04_512_2: -1130585243
-      wall_sample04_512_3: -166705793
-      wall_sample04_512_8: -1697215207
-      wall_sample04_512_23: 2105708750
-      wall_sample04_512_21: -387483739
-      wall_sample04_512_16: 997359009
-      wall_sample04_512_7: -1330250504
-      wall_sample04_512_1: -2047676078
-      wall_sample04_512_14: -1588836914
-      wall_sample04_512_20: 1376766235
-      wall_sample04_512_4: -2109280133
-      wall_sample04_512_22: -1052360819
-      wall_sample04_512_18: 733998701
-      wall_sample04_512_17: -1477065250
-      wall_sample04_512_10: 1275149320
-      wall_sample04_512_13: -968294237
-      wall_sample04_512_6: 962014055
-      wall_sample04_512_9: -257766380
-      wall_sample04_512_15: -1870091415
-      wall_sample04_512_5: 438115
-      wall_sample04_512_11: -1160157978
-      wall_sample04_512_0: 803983117
+      wall_sample06_512_2: -1523686310
+      wall_sample06_512_12: 1221079180
+      wall_sample06_512_5: -2029851125
+      wall_sample06_512_0: -1387677671
+      wall_sample06_512_20: -451292068
+      wall_sample06_512_3: 1847032475
+      wall_sample06_512_13: -536746565
+      wall_sample06_512_7: -1959233288
+      wall_sample06_512_8: -1494961554
+      wall_sample06_512_10: -1085978455
+      wall_sample06_512_4: 186064563
+      wall_sample06_512_22: 259970769
+      wall_sample06_512_1: 545970964
+      wall_sample06_512_9: 1716933352
+      wall_sample06_512_15: 1667942791
+      wall_sample06_512_14: -717349318
+      wall_sample06_512_18: -371031158
+      wall_sample06_512_6: 1330520027
+      wall_sample06_512_11: 1505063439
+      wall_sample06_512_21: -479650243
+      wall_sample06_512_16: -1566089525
+      wall_sample06_512_19: -218220360
+      wall_sample06_512_23: -1279863172
+      wall_sample06_512_17: -1456366365
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

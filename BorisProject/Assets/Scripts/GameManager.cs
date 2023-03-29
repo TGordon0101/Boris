@@ -5,22 +5,29 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private LightManager m_lightManager;
     public GameObject Player_Obj;
     public AI AI_Script_Obj;
+
+    public AudioSource AmbientMusic;
+    public AudioSource ChaseMusic;
 
     public bool b_ChaseState;
     public bool b_GameEnd;
     public bool b_HasKey;
 
-    [SerializeField] private LightManager m_lightManager;
-
     void Start()
     {
         Player_Obj = GameObject.Find("Player");
+        m_lightManager = GameObject.Find("LightManager 1").GetComponent<LightManager>();
+        AmbientMusic.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        AmbientMusic.Stop();
+        ChaseMusic.Play();
+
         if (col.gameObject.name == "Player")
         {
             if(!b_ChaseState)

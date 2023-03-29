@@ -43,4 +43,10 @@ public class UIScript : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void YouLose()
+    {
+        YouLose_Obj.SetActive(true);
+        Buttons_Obj.SetActive(true);
+    }
 }

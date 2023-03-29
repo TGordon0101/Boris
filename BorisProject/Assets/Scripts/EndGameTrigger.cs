@@ -15,7 +15,8 @@ public class EndGameTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         b_DetectedPlayer = true;
-        if (GM_Obj.b_ChaseState == true)
+
+        if (GM_Obj.b_ChaseState == true && GM_Obj.b_HasKey == true)
         {
             GM_Obj.SetGameEnd(true);
         }
