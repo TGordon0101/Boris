@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     {
         Player_Obj = GameObject.Find("Player");
         m_lightManager = GameObject.Find("LightManager 1").GetComponent<LightManager>();
-        AmbientMusic.Play();
+        //AmbientMusic.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
