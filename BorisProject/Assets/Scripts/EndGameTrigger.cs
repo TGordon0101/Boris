@@ -9,7 +9,7 @@ public class EndGameTrigger : MonoBehaviour
 
     void Start()
     {
-        GM_Obj = GameObject.Find("ChastTrigger").GetComponent<GameManager>();
+        GM_Obj = GameObject.Find("GameTrigger").GetComponent<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

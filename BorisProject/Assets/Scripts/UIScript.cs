@@ -16,9 +16,9 @@ public class UIScript : MonoBehaviour
         YouWin_Obj = GameObject.Find("You Win Text");
         YouLose_Obj = GameObject.Find("You Lose Text");
         Buttons_Obj = GameObject.Find("Buttons");
-        GM_Obj = GameObject.Find("ChastTrigger").GetComponent<GameManager>();
+        GM_Obj = GameObject.Find("GameTrigger").GetComponent<GameManager>();
 
-        //UI_Obj.SetActive(false);
+       // UI_Obj.SetActive(false);
         YouWin_Obj.SetActive(false);
         YouLose_Obj.SetActive(false);
         Buttons_Obj.SetActive(false);

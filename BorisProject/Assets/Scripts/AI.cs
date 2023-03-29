@@ -27,7 +27,7 @@ public class AI : MonoBehaviour
 
         Player_Obj = GameObject.FindGameObjectWithTag("Player");
         PlayerController_Obj = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        GameManager_Obj = GameObject.Find("ChastTrigger").GetComponent<GameManager>();
+        GameManager_Obj = GameObject.Find("GameTrigger").GetComponent<GameManager>();
         AI_Obj = GameObject.FindGameObjectWithTag("Enemy");
 
         AI_Chase = false;
@@ -67,7 +67,7 @@ public class AI : MonoBehaviour
 
     public void PlaySound()
     {
-       // SoundEffect.Play();
+        //SoundEffect.Play();
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
