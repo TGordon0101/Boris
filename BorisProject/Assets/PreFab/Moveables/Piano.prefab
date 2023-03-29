@@ -53,16 +53,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 989411046229015074, guid: f5b0aa364931e9343b51dd8449d3f628, type: 3}
       propertyPath: m_Size.x
-      value: 6.77
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 989411046229015074, guid: f5b0aa364931e9343b51dd8449d3f628, type: 3}
       propertyPath: m_Size.y
-      value: 8.03
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 989411046229015074, guid: f5b0aa364931e9343b51dd8449d3f628, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e23d3d081b0240d4b806596246f73140, type: 3}
+      objectReference: {fileID: 21300000, guid: de1c3f8ddedb7504a8cd3cfe17b6275d, type: 3}
     - target: {fileID: 989411046229015074, guid: f5b0aa364931e9343b51dd8449d3f628, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -165,7 +165,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 6.77, y: 8.03}
-    newSize: {x: 6.77, y: 8.03}
+    newSize: {x: 8, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
