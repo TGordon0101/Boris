@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6053920377298529537}
   - component: {fileID: 7624024271490167734}
   - component: {fileID: 1706221422456805385}
-  - component: {fileID: 555509662914457435}
   - component: {fileID: 2683376401546437472}
+  - component: {fileID: 5711737639651463044}
   m_Layer: 0
   m_Name: BlackOut Tiles
   m_TagString: Untagged
@@ -146,7 +146,23 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!19719996 &555509662914457435
+--- !u!114 &2683376401546437472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611603955797485247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6cd4b8c964d7a546b7fd21344c1202b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tilemap: {fileID: 0}
+  alpha: 1
+  increaseAlpha: 0
+  decreaseAlpha: 0
+--- !u!19719996 &5711737639651463044
 TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,18 +178,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!114 &2683376401546437472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611603955797485247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6cd4b8c964d7a546b7fd21344c1202b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7341421373172631820
 GameObject:
   m_ObjectHideFlags: 0

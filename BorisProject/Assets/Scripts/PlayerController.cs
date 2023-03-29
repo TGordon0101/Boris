@@ -54,10 +54,10 @@ public class PlayerController : MonoBehaviour
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         body.velocity = input.normalized * moveSpeed;
 
-        if(body.velocity.x == 0 && body.velocity.y == 0)
-        {
-            PlayerSound.Play();
-        }
+        //if(body.velocity.x == 0 && body.velocity.y == 0)
+        //{
+        //    PlayerSound.Play();
+        //}
     }
 
     private void MoveCamera()
