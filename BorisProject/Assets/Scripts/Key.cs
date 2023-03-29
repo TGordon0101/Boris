@@ -13,7 +13,7 @@ public class Key : MonoBehaviour
     void Start()
     {
         Player_Obj = GameObject.Find("Player");
-        GM_Obj = GameObject.Find("GameTrigger").GetComponent<GameManager>();
+        GM_Obj = GameObject.Find("ChastTrigger").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
