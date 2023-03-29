@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject Player_Obj;
     public AI AI_Script_Obj;
 
-    public AudioSource AmbientMusic;
-    public AudioSource ChaseMusic;
+    //public AudioSource AmbientMusic;
+    //public AudioSource ChaseMusic;
 
     public bool b_ChaseState;
     public bool b_GameEnd;
@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        AmbientMusic.Stop();
-        ChaseMusic.Play();
+        //AmbientMusic.Stop();
+        //ChaseMusic.Play();
 
         if (col.gameObject.name == "Player")
         {
