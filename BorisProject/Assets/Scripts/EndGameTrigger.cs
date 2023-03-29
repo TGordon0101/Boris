@@ -9,12 +9,13 @@ public class EndGameTrigger : MonoBehaviour
 
     void Start()
     {
-        GM_Obj = GameObject.Find("GameTrigger").GetComponent<GameManager>();
+        GM_Obj = GameObject.Find("ChastTrigger").GetComponent<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         b_DetectedPlayer = true;
+
         if (GM_Obj.b_ChaseState == true && GM_Obj.b_HasKey == true)
         {
             GM_Obj.SetGameEnd(true);
