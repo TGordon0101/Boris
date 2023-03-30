@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public AudioSource AmbientMusic;
     public AudioSource ChaseMusic;
+    public AudioSource ChaseHeartBeat;
 
     public bool b_ChaseState;
     public bool b_GameEnd;
@@ -20,13 +21,14 @@ public class GameManager : MonoBehaviour
     {
         Player_Obj = GameObject.Find("Player");
         m_lightManager = GameObject.Find("LightManager 1").GetComponent<LightManager>();
-        //AmbientMusic.Play();
+        AmbientMusic.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         AmbientMusic.Stop();
         ChaseMusic.Play();
+        ChaseHeartBeat.Play();
 
         if (col.gameObject.name == "Player")
         {
